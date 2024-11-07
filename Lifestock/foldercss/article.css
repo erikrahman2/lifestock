@@ -1,0 +1,37 @@
+/* main article */
+.article-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+.article-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.article-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.article-info {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.article-section p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.article-section p:last-child {
+  margin-bottom: 0;
+}

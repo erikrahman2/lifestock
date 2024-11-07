@@ -1,0 +1,114 @@
+/* main */
+main {
+  box-sizing: border-box;
+}
+main .box {
+  padding: 20px 70px;
+  margin: 220px 0 100px;
+}
+
+/* wrapint */
+.wrapint {
+  background-image: url(/asset/Service/hero.png);
+  background-size: cover;
+  padding: 20px 70px;
+  height: 857px;
+  display: flex;
+  position: relative;
+}
+
+.wrapint .hero {
+  width: 630px;
+  margin-top: 20px;
+  padding: 60px 20px;
+}
+
+.wrapint .hero1 {
+  margin-bottom: 80px;
+}
+
+.wrapint .hero1 p {
+  color: #fafafa;
+}
+
+.wrapint .hero2 {
+  margin: 50px;
+}
+
+.wrapint .hero2 a {
+  width: 300px;
+  display: flex;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 40px;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  text-decoration: none;
+  color: #111111;
+}
+.wrapint .hero2 a:hover {
+  background-color: #e87c01;
+  color: #fafafa;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.wrapint .hero2 img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.wrapint .phone {
+  position: absolute;
+  top: 350px;
+  right: 200px;
+}
+
+.wrapint .phone .phoneitem {
+  height: 703px;
+}
+
+/* fitur */
+main .fitur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .fitur .fiturtitle {
+  text-align: center;
+}
+
+main .fitur .fiturlist {
+  display: grid;
+  gap: 5rem 2rem;
+  grid-template-columns: repeat(3, 342px);
+  grid-template-rows: repeat(2, 530px);
+  justify-content: center;
+}
+
+main .fiturlist .fiturbox {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  height: 530px;
+  border-radius: 30px;
+  box-shadow: 0 1px 6px 1px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 20px;
+}
+
+main .fiturlist .fiturbox img {
+  width: 280px;
+  margin: 2px auto;
+}
