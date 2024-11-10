@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: #111111;
+  position: relative;
+}
+/* text style */
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+.lifestox span {
+  color: #e87c01;
+}
+
+/* font size */
+h1 {
+  font-size: 2.5rem; /* setara dengan 40px */
+  line-height: 2.5rem; /* setara dengan 40px */
+  margin-bottom: 2.1rem; /* setara dengan 35px */
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+}
+
+nav ul li a {
+  font-size: 1.5rem; /* setara dengan 25px */
+}
+
+.text25 {
+  font-size: 1.56rem; /* setara dengan 25px */
+}
+.text20 {
+  font-size: 1.25rem; /* setara dengan 20px */
+}
+.text15 {
+  font-size: 0.85rem;
+}
+.text12 {
+  font-size: 0.75rem; /* setara dengan 12px */
+  line-height: 1.25rem; /* setara dengan 20px */
+}
+
+.text10 {
+  font-size: 0.6rem; /* setara dengan 10px */
+  line-height: 1.1rem; /* setara dengan 18px */
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a:hover {
+  color: #e87c01;
+}
+
+nav ul a {
+  color: #111111;
+}
+
+/* footer */
+footer {
+  margin: auto;
+  display: grid;
+  background: #ffd98c;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "ftssm ftteam ftservice ftcontactus"
+    "ftcopyright ftcopyright ftcopyright ftcopyright";
+}
+
+footer h2 {
+  font-size: 30px;
+}
+footer p {
+  font-size: 18px;
+}
+/* ft item */
+.ftbox {
+  padding: 20px;
+  place-self: start center;
+}
+.ftbox a,
+.ftbox p {
+  text-decoration: none;
+  color: #111111;
+}
+.ftssm {
+  grid-area: ftssm;
+}
+.ftteam {
+  grid-area: ftteam;
+}
+.ftservice {
+  grid-area: ftservice;
+}
+.ftcontactus {
+  grid-area: ftcontactus;
+}
+.ftcontactus .contact {
+  display: flex;
+  align-items: center;
+}
+.ftcontactus .contact img {
+  margin-right: 6px;
+  height: 21px;
+}
+.ftcopyright {
+  grid-area: ftcopyright;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  footer {
+    text-align: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "ftssm" "ftteam" "ftservice" "ftcontactus"
+      "ftcopyright";
+  }
+}
