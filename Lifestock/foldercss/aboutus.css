@@ -4,34 +4,35 @@ main {
   margin-top: 0;
 }
 
-main .typografi {
+main .tpau {
   background-image: url(/asset/aboutus/typogra.jpg);
-  height: 790px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main .typografi h1,
-.typografi h2 {
+main .tpau h1,
+.tpau h2 {
   line-height: 10px;
   z-index: 99;
 }
 
-/* color for typo h1 and what & vm span */
+/* color for typo h1 and waus & vm span */
 main .org {
   color: #e87c01;
 }
 
-main .typografi h2 {
+main .tpau h2 {
   color: #fafafa;
 }
 
-/* what */
-main .what {
+/* waus */
+main .waus {
   display: flex;
-  width: 1243px;
+  /* width: 1243px; */
+  padding: 0 30px;
   margin: auto;
   height: 500px;
   flex-direction: column;
@@ -42,7 +43,7 @@ main .what {
 
 /* vm */
 main .vm {
-  margin: 150px 0 150px 120px;
+  margin: 50px 0 150px 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -69,39 +70,43 @@ main .vm {
 }
 
 /* profile */
-main .profiles {
+main .usprofiles {
   width: 1000px;
-  margin: 150px auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.profiles h1 {
+.usprofiles h1 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.profiles h2 {
+.usprofiles h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.profiles .team {
+.usprofiles .team {
   margin-bottom: 40px;
 }
 
-.profiles .team .members {
+.usprofiles .team .members {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.profiles .members .member {
+.usprofiles .members .member {
+  width: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-bottom: 12px;
 }
 
-.profiles .members .member img {
+.usprofiles .members .member img {
   width: 100%;
 }

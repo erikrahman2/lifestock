@@ -9,7 +9,7 @@ fetch("articles.json")
   })
   .catch((error) => console.error("Error loading articles:", error));
 
-// Fungsi untuk menampilkan artikel dalam card
+// Fungsi untuk nampilin artikel dalam card
 function displayArticles(articles) {
   const blogContainer = document.getElementById("blog-container");
   blogContainer.innerHTML = ""; // Kosongkan kontainer sebelum mengisi ulang
@@ -25,8 +25,8 @@ function displayArticles(articles) {
 
     articleCard.innerHTML = `
             <img src="${article.image}" alt="${article.title}">
-            <h2>${article.title}</h2>
-            <p>${article.content.substring(0, 100)}...</p>
+            <h2>${article.title.substring(0, 23)}...</h2>
+            <p>${article.content.substring(0, 60)}...</p>
         `;
 
     blogContainer.appendChild(articleCard);

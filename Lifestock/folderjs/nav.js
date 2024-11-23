@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("navbar").innerHTML = data;
+      const hamburger = document.querySelector(".hamburger");
+      // hamburger
+      hamburger.onclick = function () {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      };
     })
     .catch((error) => console.error("Error loading navbar:", error));
 });

@@ -1,17 +1,18 @@
 /* hero */
-.hero {
+.heroblog {
   height: 570px;
-  background-image: url(/asset/blog/section.jpg);
-  background-position: 0 -180px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url(/asset/blog/section.jpg);
+  /* background-position: 0 -180px; */
   background-size: cover;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
-.hero h1,
+.heroblog h1,
 .text20 {
-  line-height: 20px;
+  line-height: 0.1;
   color: #fafafa;
 }
 
@@ -31,7 +32,7 @@
 /* blog card */
 .blog-container {
   width: 90%;
-  min-width: 576px; /* perlu diperbaiki */
+  /* min-width: 576px; perlu diperbaiki */
   margin: auto;
   display: flex;
   flex-wrap: wrap;
